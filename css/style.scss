@@ -235,6 +235,7 @@ $layer: (
     max-width: 767px;
     width: 100%;
     margin: 0 auto;  
+    margin-bottom: 2em;
 }
 
 .form__table{
@@ -327,5 +328,19 @@ $layer: (
 .form__example{
     color: #707070;
     line-height: 1;
+}
+
+.form__button-wrap{
+    text-align: center;
+}
+
+.form__button{
+    width: 100%;
+    max-width: 200px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background:#d11313;
+    color: #fff;
+    font-size: 1em;
 }
 
