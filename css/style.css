@@ -136,4 +136,54 @@ img {
 .about__button:last-child {
   margin-right: 0;
 }
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(33% - 20px);
+          flex: 0 1 calc(33% - 20px);
+  margin-right: 30px;
+  margin-bottom: 2em;
+  padding: 1.5em 1em;
+  border: 1px solid #dcdcdc;
+}
+
+.skill__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.skill__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.skill__icon-wrap {
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.skill__title {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.skill__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: #000;
+}
 /*# sourceMappingURL=style.css.map */

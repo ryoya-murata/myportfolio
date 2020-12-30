@@ -2,6 +2,7 @@
 
 $font-color:#1c1b15;
 $bg-color:#BCBABE;
+$border-color:#dcdcdc;
 
 html{
     font-size: 16px;
@@ -173,3 +174,51 @@ $layer: (
     }
 }
 
+
+// =======================
+//  skills
+// =======================
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill__item{
+    flex: 0 1 calc(33% - 20px);
+    margin-right: 30px;
+    margin-bottom: 2em;
+    padding: 1.5em 1em;
+    border: 1px solid #dcdcdc;
+
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+
+    &:nth-child(n+4){
+        margin-bottom: 0;
+    }
+}
+
+.skill__icon-wrap{
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.skill__title{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom:-10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 2px;
+        background: #000;
+    }
+}
