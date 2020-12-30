@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  color: #1c1b15;
 }
 
 img {
@@ -86,6 +87,53 @@ img {
 }
 
 .header__item:last-child {
+  margin-right: 0;
+}
+
+.about__contents-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__img-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 48%;
+          flex: 0 2 48%;
+  margin-right: 4%;
+}
+
+.about__desc-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  text-align: center;
+}
+
+.about__intro {
+  margin-bottom: 0.5em;
+}
+
+.about__reason {
+  margin-bottom: 1em;
+}
+
+.about__button {
+  margin-right: 1em;
+  padding: 10px 8px;
+  max-width: 42px;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #1c1b15;
+  border-radius: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.about__button:last-child {
   margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

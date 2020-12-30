@@ -1,11 +1,15 @@
 @charset 'utf-8';
 
+$font-color:#1c1b15;
+$bg-color:#BCBABE;
+
 html{
     font-size: 16px;
 }
 
 body{
     font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    color:$font-color;
 }
 
 img{
@@ -37,8 +41,6 @@ $breakpoints: (
 //  共通部分
 // =======================
 
-$font-color:#1c1b15;
-$bg-color:#BCBABE;
 
 .section{
     padding: 3em 0;
@@ -127,3 +129,47 @@ $layer: (
         margin-right: 0;
     }
 }
+
+// =======================
+//  about
+// =======================
+
+.about__contents-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.about__img-wrap{
+    flex: 0 2 48%;
+    margin-right: 4%;
+}
+
+.about__desc-wrap{
+    flex: 0 1 48%;
+    text-align: center;
+}
+
+.about__intro{
+    margin-bottom: 0.5em;
+}
+
+.about__reason{
+    margin-bottom: 1em;
+}
+
+.about__button{
+    margin-right: 1em;
+    padding: 10px 8px;
+    max-width: 42px;
+    width: 100%;
+    background: transparent ;
+    border: 2px solid $font-color;
+    border-radius: 50%;
+    transition: all .3s;
+    
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
