@@ -39,6 +39,7 @@ img {
   font-size: 1.125rem;
   -webkit-transition: .3s;
   transition: .3s;
+  color: #1c1b15;
 }
 
 .button:hover {
@@ -126,16 +127,17 @@ img {
   margin-bottom: 1em;
 }
 
-.about__button {
-  margin-right: 1em;
+.button--shape_circle {
+  border-radius: 50%;
   padding: 10px 8px;
   max-width: 42px;
   width: 100%;
+}
+
+.about__button {
+  margin-right: 1em;
   background: transparent;
   border: 2px solid #1c1b15;
-  border-radius: 50%;
-  -webkit-transition: all .3s;
-  transition: all .3s;
 }
 
 .about__button:last-child {
@@ -300,5 +302,36 @@ img {
   background: #d11313;
   color: #fff;
   font-size: 1em;
+}
+
+.footer {
+  background: #332f2f;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.footer__button-wrap {
+  margin-bottom: 2em;
+}
+
+.button--bg_dark {
+  background: #474444;
+}
+
+.footer__button {
+  margin-right: 1em;
+}
+
+.footer__button:last-child {
+  margin-right: 0;
+}
+
+.footer__icon {
+  color: #bbadad;
+}
+
+.footer__copyright {
+  font-size: 1.3em;
+  color: #bbadad;
 }
 /*# sourceMappingURL=style.css.map */
