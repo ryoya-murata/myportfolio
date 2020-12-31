@@ -49,7 +49,7 @@ $breakpoints: (
 
 
 .section{
-    padding: 3em 0;
+    padding: 5em 0;
 }
 
 .section__inner{
@@ -61,8 +61,8 @@ $breakpoints: (
 }
 
 .section__title{
-    font-size: 2em;
-    margin-bottom: .5em;
+    font-size: 2.5em;
+    margin-bottom: .6em;
     padding-bottom: 6px;
     border-bottom: 2px solid #000;
 }
@@ -81,6 +81,10 @@ $breakpoints: (
 
 .section__desc{
     margin-bottom: 2em;
+}
+
+.section--bg_gray{
+    background: #f8f9fa;
 }
 
 // =======================
