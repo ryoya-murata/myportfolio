@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/destyle.css">
+    <!-- Swiper.css -->
+    <link rel="stylesheet" href="./css/swiper.css">
     <!-- my css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -140,39 +142,34 @@
     <section class="section work">
         <div class="section__inner works__inner">
             <div class="section__title">Works</div><!-- /.section__title -->
-            <div class="section__desc">ここでは過去に作成したWebサイトを紹介します。</div><!-- /.section__desc -->
-            <div class="works">
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-                <div class="works__item-wrap">
-                    <a href="" class="works__item">
-                        <img src="" alt="" class="works__img">
-                    </a><!-- /.works__item -->
-                </div><!-- /.works__item-wrap -->
-            </div><!-- /.works -->
+            <div class="section__desc">ここでは過去に作成したWebサイトを紹介します。クリックするとそのサイトに移動します。</div><!-- /.section__desc -->
+            <div class="works-wrap swiper-container">
+                <div class="works swiper-wrapper">
+                    <div class="works__item-wrap swiper-slide">
+                        <a href="https://ryoya-web.com" class="works__item">
+                            <img src="./img/works-img/work-item1-short.jpg" alt="" class="works__img">
+                        </a><!-- /.works__item -->
+                    </div><!-- /.works__item-wrap -->
+                    <div class="works__item-wrap swiper-slide">
+                        <a href="" class="works__item">
+                            <img src="./img/works-img/work-item2-short.jpg" alt="" class="works__img">
+                        </a><!-- /.works__item -->
+                    </div><!-- /.works__item-wrap -->
+                    <div class="works__item-wrap swiper-slide">
+                        <a href="" class="works__item">
+                            <img src="./img/works-img/work-item3-short.png" alt="" class="works__img">
+                        </a><!-- /.works__item -->
+                    </div><!-- /.works__item-wrap -->
+                    <div class="works__item-wrap swiper-slide">
+                        <a href="" class="works__item">
+                            <img src="./img/works-img/work-item4-short.png" alt="" class="works__img">
+                        </a><!-- /.works__item -->
+                    </div><!-- /.works__item-wrap -->
+                </div><!-- /.works -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination swiper-pagination--black"></div>
+            </div><!-- /.works-wrap swiper-container -->
         </div><!-- /.section__inner works__inner -->
     </section><!-- /.section work -->
 
@@ -222,8 +219,16 @@
         </div><!-- /.footer__inner -->
     </footer><!-- /.footer -->
 
+    
+
+    <!-- TweenMax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Swiper.js -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- my js -->
     <script src="js/script.js"></script>
+    <!-- Swiper -->
+
 
 
     
