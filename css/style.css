@@ -30,11 +30,25 @@ img {
   margin: 0 auto;
 }
 
-.section__title {
-  font-size: 2.5em;
+.section__heads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #332f2f;
   margin-bottom: .6em;
   padding-bottom: 6px;
-  border-bottom: 2px solid #000;
+}
+
+.section__title {
+  font-size: 2.5em;
+  margin-right: 0.3em;
+}
+
+.section__title-desc {
+  font-size: 1.5em;
 }
 
 .button {
@@ -119,8 +133,6 @@ img {
 
 .header__link--active {
   border-bottom: 1px solid #fff;
-  -webkit-transition: all 3s;
-  transition: all 3s;
 }
 
 .top {
@@ -464,10 +476,10 @@ img {
   width: 100%;
   max-width: 200px;
   padding: 14px 18px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #d11313;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.125em;
 }
 
 .footer {
