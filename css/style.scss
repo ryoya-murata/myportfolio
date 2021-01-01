@@ -53,6 +53,7 @@ $breakpoints: (
 
 .section{
     padding: 5em 0;
+    width: 100%;
 
     @include mq('sp'){
         padding: 3em 0;
@@ -61,13 +62,12 @@ $breakpoints: (
 
 .section__inner{
     max-width : $layout-width-inner;
-    width: 100%;
     box-sizing: content-box;
     padding: 0 30px;
     margin: 0 auto;
 
     @include mq("sp"){
-        padding: 0 15px;
+        // padding: 0 15px;
     }
 }
 
@@ -161,8 +161,16 @@ $breakpoints: (
     border-color:#f8f9fa  transparent transparent transparent;
 }
 
+
+
+.is-pc{
+    @include mq('tab'){
+        display: none;
+    }
+}
+
 .is-tab{
-    @include mq('sp'){
+    @include mq('pc'){
         display: none;
     }
 }
@@ -199,6 +207,11 @@ $layer: (
     transition: all 0.5s ease 0s;
     color: #fff;
     background: transparent;
+    width: 100%;
+
+    @include mq('tab'){
+        padding: .7em 0;
+    }
 }
 
 .header--bg_brown{
@@ -218,6 +231,10 @@ $layer: (
 .header__logo-wrap{
     max-width: 100px;
     width: 100%;
+
+    @include mq('tab'){
+        max-width: 70px;
+    }
 }
 
 .header__list{
@@ -287,11 +304,12 @@ $layer: (
 .top__letters-wrap{
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
     transform: translateY(-50%);
     color: #fff;
     font-size: 3em;
     text-transform: uppercase;
+
 }
 
 .top__letter{
@@ -322,15 +340,28 @@ $layer: (
 .about__img-wrap{
     flex: 0 2 48%;
     margin-right: 4%;
+    position: relative;
+    padding-top: 60%;
 
     @include mq('sp'){
         margin-right: 0;
     }
 }
 
+.about__img{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .about__desc-wrap{
     flex: 0 1 48%;
     text-align: center;
+
+    
 }
 
 .about__intro{

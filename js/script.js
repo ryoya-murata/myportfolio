@@ -94,7 +94,7 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     initialSlide: 0,
     centeredSlides : true,
@@ -103,5 +103,10 @@ var mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
+    },
+    breakpoints:{
+        767:{
+            slidesPerView: 2,
+        }
     }
 });
