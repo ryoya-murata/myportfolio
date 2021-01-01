@@ -16,12 +16,15 @@ body{
     color:$font-color;
     width: 100%;
     height: 100%;
+    line-height: 1.2;
 }
 
 img{
     width: 100%;
     vertical-align: top;
 }
+
+
 
 
 // =======================
@@ -50,6 +53,10 @@ $breakpoints: (
 
 .section{
     padding: 5em 0;
+
+    @include mq('sp'){
+        padding: 3em 0;
+    }
 }
 
 .section__inner{
@@ -58,6 +65,10 @@ $breakpoints: (
     box-sizing: content-box;
     padding: 0 30px;
     margin: 0 auto;
+
+    @include mq("sp"){
+        padding: 0 15px;
+    }
 }
 
 .section__heads{
@@ -71,10 +82,18 @@ $breakpoints: (
 .section__title{
     font-size: 2.5em;
     margin-right: 0.3em;
+
+    @include mq('sp'){
+        font-size: 1.8em;
+    }
 }
 
 .section__title-desc{
     font-size: 1.5em;
+
+    @include mq('sp'){
+        font-size: 1em;
+    }
 }
 
 .button{
@@ -84,11 +103,21 @@ $breakpoints: (
     transition: .3s;
     color: $font-color;
 
+    @include mq('sp'){
+        font-size: 1em;
+    }
+
 }
 
 .section__desc{
     margin-bottom: 2em;
+
+    @include mq('sp'){
+        margin-bottom: 1em;
+    }
 }
+
+// 背景
 
 .section--bg_gray{
     background: #f8f9fa;
@@ -130,6 +159,12 @@ $breakpoints: (
     bottom: -5em;
     border-width: 5em 100vw 0 0;
     border-color:#f8f9fa  transparent transparent transparent;
+}
+
+.is-tab{
+    @include mq('sp'){
+        display: none;
+    }
 }
 
 // =======================
@@ -278,11 +313,19 @@ $layer: (
 .about__contents-wrap{
     display: flex;
     align-items: center;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .about__img-wrap{
     flex: 0 2 48%;
     margin-right: 4%;
+
+    @include mq('sp'){
+        margin-right: 0;
+    }
 }
 
 .about__desc-wrap{
@@ -333,6 +376,10 @@ $layer: (
 .skills{
     display: flex;
     flex-wrap: wrap;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .skill__item{
@@ -342,12 +389,40 @@ $layer: (
     padding: 1.5em 1em;
     border: 1px solid #dcdcdc;
 
-    &:nth-child(3n){
-        margin-right: 0;
+   @include mq('pc'){
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+
+        &:nth-child(n+4){
+            margin-bottom: 0;
+        }
+   }
+
+    @include mq('tab'){
+        flex: 0 1 calc(50% - 15px);
+        margin-right: 30px;
+
+        &:nth-child(3n){
+            margin-right: 30px;
+        }
+
+        &:nth-child(even){
+            margin-right: 0;
+        }
+
+        &:nth-child(4){
+            margin-bottom: 30px;
+        }
     }
 
-    &:nth-child(n+4){
-        margin-bottom: 0;
+    @include mq('sp'){
+        width: 100%;
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -384,6 +459,10 @@ $layer: (
 
 .cards{
     display: flex;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .cards__item{
@@ -394,6 +473,11 @@ $layer: (
 
     &:last-child{
         margin-right: 0;
+    }
+
+    @include mq('sp'){
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 }
 
@@ -524,6 +608,13 @@ $layer: (
     color: #fff;
     width: 250px;
     font-weight: normal;
+    
+    @include mq('sp'){
+        display: block;
+        width: 100%;
+    }
+
+    
 }
 
 .form__label-wrap--textarea{
@@ -549,6 +640,11 @@ $layer: (
 
 .form__input-wrap,.form__textarea-wrap{
     width: calc(100% - 250px);
+
+    @include mq('sp'){
+        display: block;
+        width: 100%;
+    }
 }
 
 
@@ -616,6 +712,8 @@ $layer: (
         background: $main-bg-color;
     }
 }
+
+
 
 // =======================
 //  footer
