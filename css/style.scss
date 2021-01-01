@@ -97,6 +97,44 @@ $breakpoints: (
     background: #f8f9fa;
 }
 
+.section__bg--shape_triangle{
+    position: relative;
+}
+
+.section__bg--shape_triangle::before,.section__bg--shape_triangle::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: -100;
+    left: 0;
+}
+
+.section__bg--shape_triangle-down::before{
+    top: -5em;
+    border-width: 5em 0 0 100vw ;
+    border-color: transparent  transparent  transparent #f8f9fa;
+}
+
+.section__bg--shape_triangle-down::after{
+    bottom: -5em;
+    border-width: 5em 0 0 100vw ;
+    border-color:#f8f9fa  transparent transparent transparent;
+}
+
+.section__bg--shape_triangle-up::before{
+    top: -5em;
+    border-width: 5em 100vw 0 0 ;
+    border-color: transparent #f8f9fa  transparent transparent;
+}
+
+.section__bg--shape_triangle-up::after{
+    bottom: -5em;
+    border-width: 5em 100vw 0 0;
+    border-color:#f8f9fa  transparent transparent transparent;
+}
+
 // =======================
 //  z-index
 // =======================
@@ -218,6 +256,10 @@ $layer: (
 //  about
 // =======================
 
+.about{
+    padding: 5em 0 7em;
+}
+
 .about__contents-wrap{
     display: flex;
     align-items: center;
@@ -312,6 +354,10 @@ $layer: (
 // =======================
 //  flow
 // =======================
+
+.flow{
+    padding: 7em 0;
+}
 
 .cards{
     display: flex;
@@ -420,6 +466,10 @@ $layer: (
 // =======================
 //  contact
 // =======================
+
+.contact{
+    padding: 7em 0 5em;
+}
 
 .form__table-wrap{
     max-width: 767px;
