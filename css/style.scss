@@ -84,9 +84,6 @@ $breakpoints: (
     transition: .3s;
     color: $font-color;
 
-    &:hover{
-        opacity: .7s;
-    }
 }
 
 .section__desc{
@@ -203,7 +200,25 @@ $layer: (
 
 .header__link{
     display: block;
-    padding-bottom: .2em;
+    padding-bottom: 2px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 0;
+        bottom: -1px;
+        transform: translateX(-50%);
+        transition: all .5s;
+        width: 0;
+        height: 1px;
+        background: #fff;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
 
     &--active{
         border-bottom: 1px solid #fff;
@@ -294,6 +309,14 @@ $layer: (
     margin-right: 1em;
     background: transparent ;
     border: 2px solid $font-color;
+
+    &:hover{
+        background: $main-bg-color;
+
+        .button__icon--twitter,.button__icon--facebook{
+            color: #fff;
+        }
+    }
    
     
 
@@ -442,7 +465,11 @@ $layer: (
 
     &::after{
         font-size: 24px;
-    color: #fff;
+        color: #fff;
+    }
+
+    &:hover{
+        opacity: .7;
     }
 
 }
@@ -578,10 +605,16 @@ $layer: (
     width: 100%;
     max-width: 200px;
     padding: 14px 18px;
+    border: 3px solid $main-bg-color;
     border-radius: 15px;
-    background:#d11313;
-    color: #fff;
+    color: $main-bg-color;
+    background: #fff;
     font-size: 1.125em;
+
+    &:hover{
+        color: #fff;
+        background: $main-bg-color;
+    }
 }
 
 // =======================
@@ -600,6 +633,10 @@ $layer: (
 
 .button--bg_dark{
     background: rgb(71, 68, 68);
+
+    &:hover{
+        background: rgb(226, 221, 221);
+    }
 }
 
 .footer__button{
@@ -608,10 +645,16 @@ $layer: (
     &:last-child{
         margin-right: 0;
     }
+
+    &:hover{
+        .footer__icon{
+            color:  $main-bg-color;
+         }
+    }
 }
 
 .footer__icon{
-    color:  rgb(187, 173, 173);
+   color:  rgb(187, 173, 173);
 }
 
 .footer__copyright{
