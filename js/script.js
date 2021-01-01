@@ -1,4 +1,75 @@
 //==================
+// header
+//==================
+
+$(function(){
+    // windowsがスクロールされたときに以下の内容を実行
+    $(window).scroll(function(){    
+        // windowの現在のスクロール位置を取得
+        var scrollTop = $(window).scrollTop();
+        // 対象エリアの高さを取得
+        var areaHeight = $('.top').innerHeight();
+        
+        // 現在のスクロール位置が対象エリアの半分より大きければ以下の内容を実行
+        if(scrollTop > areaHeight/2){
+            $('.header').addClass('header--bg_brown');
+        } else {
+            $('.header').removeClass('header--bg_brown');
+        }
+    })
+})
+
+$(function(){
+    $('a[href^="#"]').click(function(){　　  
+        var speed = 500;　　　　                                                      
+        var adjust = $('.header').innerHeight();                                       
+        var href= $(this).attr("href");　　　                                        
+        var target = $(href == "#" ? 'html' : href);                                 
+        var position = target.offset().top;　                                       
+        $("html, body").animate({scrollTop:position - adjust}, speed, "swing");    　
+        return false;
+      });
+
+})
+
+$(function(){
+    $(window).scroll(function(){
+        var adjust = $(".header").innerHeight();
+        var scrollTop = $(window).scrollTop() + adjust + 1  ;
+        var aboutTop = $(".about").offset().top;
+        var aboutBottom = aboutTop + $(".about").innerHeight();
+        var skillTop = $(".skill").offset().top;
+        var skillBottom = skillTop + $(".skill").innerHeight();
+        var flowTop = $(".flow").offset().top;
+        var flowBottom = flowTop + $(".flow").innerHeight();
+        var worksTop = $("#works").offset().top;
+        var worksBottom = worksTop + $("#works").innerHeight();
+        var contactTop = $(".contact").offset().top;
+        var contactBottom = contactTop + $(".contact").innerHeight();
+
+        if(scrollTop >= aboutTop && scrollTop <= aboutBottom){
+            $(".header__link").removeClass("header__link--active");
+            $('a[href="#about"]').addClass("header__link--active");
+        } else if (scrollTop >= skillTop && scrollTop <= skillBottom){
+            $(".header__link").removeClass("header__link--active");
+            $('a[href="#skill"]').addClass("header__link--active");
+        } else if (scrollTop >= flowTop && scrollTop <= flowBottom){
+            $(".header__link").removeClass("header__link--active");
+            $('a[href="#flow"]').addClass("header__link--active");
+        } else if (scrollTop >= worksTop && scrollTop <= worksBottom){
+            $(".header__link").removeClass("header__link--active");
+            $('a[href="#works"]').addClass("header__link--active");
+        } else if (scrollTop >= contactTop && scrollTop <= contactBottom){
+            $(".header__link").removeClass("header__link--active");
+            $('a[href="#contact"]').addClass("header__link--active");
+        } else{
+            $(".header__link").removeClass("header__link--active");
+        }
+    })
+})
+
+
+//==================
 // top
 //==================
 
@@ -7,7 +78,7 @@ var tl = new TimelineMax();
 tl.fromTo('.top__img-wrap',1,{
     height:'0%'
 },{
-    height:'100%',ease:"power2.easeInOut"
+    height:'100%',ease:"power2.easeInOut",delay:.2
 }).staggerFromTo('.top__letter',1,{
     x:'1em',y:'1.2em',rotateZ:180
 },{

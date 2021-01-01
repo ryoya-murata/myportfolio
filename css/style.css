@@ -66,6 +66,14 @@ img {
   right: 0;
   left: 0;
   z-index: 20;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  background: transparent;
+}
+
+.header--bg_brown {
+  background: #332f2f;
 }
 
 .header__inner {
@@ -102,6 +110,17 @@ img {
 
 .header__item:last-child {
   margin-right: 0;
+}
+
+.header__link {
+  display: block;
+  padding-bottom: .2em;
+}
+
+.header__link--active {
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 
 .top {
