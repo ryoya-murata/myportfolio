@@ -60,11 +60,21 @@ $breakpoints: (
     margin: 0 auto;
 }
 
-.section__title{
-    font-size: 2.5em;
+.section__heads{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $main-bg-color;
     margin-bottom: .6em;
     padding-bottom: 6px;
-    border-bottom: 2px solid #000;
+}
+
+.section__title{
+    font-size: 2.5em;
+    margin-right: 0.3em;
+}
+
+.section__title-desc{
+    font-size: 1.5em;
 }
 
 .button{
@@ -518,10 +528,10 @@ $layer: (
     width: 100%;
     max-width: 200px;
     padding: 14px 18px;
-    border-radius: 10px;
+    border-radius: 15px;
     background:#d11313;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.125em;
 }
 
 // =======================
