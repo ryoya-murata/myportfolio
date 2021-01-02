@@ -175,6 +175,8 @@ $breakpoints: (
     }
 }
 
+
+
 // =======================
 //  z-index
 // =======================
@@ -301,7 +303,7 @@ $layer: (
     transition: transform .5s;
 
     &.open{
-        transform: translateX(-40vw);
+        transform: translateX(calc(-40vw + 20px));
     }
 }
 
@@ -387,12 +389,12 @@ $layer: (
     height: 100%;
     opacity: 0;
     transition: opacity ease 0.5s;
-    
+    z-index: -10;
 }
 
 .overlay.open{
     opacity: 1;
-    z-index: 110;
+    z-index: 100;
 }
 
 
@@ -401,7 +403,7 @@ $layer: (
 // メニュー開いたときに背景固定
 body.fixed{
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -442,8 +444,9 @@ body.fixed{
 
     @include mq('sp'){
         left: 5%;
-        font-size: 2.5em;
+        font-size: 2.125em;
     }
+    
 }
 
 .top__letter{
@@ -902,7 +905,7 @@ body.fixed{
     max-width: 200px;
     padding: 14px 18px;
     border: 3px solid $main-bg-color;
-    border-radius: 15px;
+    border-radius: 10px;
     color: $main-bg-color;
     background: #fff;
     font-size: 1.125em;
@@ -913,6 +916,21 @@ body.fixed{
     }
 }
 
+.form__end-message{
+    display: none;
+    text-align: center;
+    padding: 3em 0;
+    background: #f8f9fa ;
+    font-size: 1.125em;
+}
+
+.form__false-message{
+    display: none;
+    text-align: center;
+    color: #ff0000;
+    background: #f8f9fa ;
+    font-size: 1.125em;
+}
 
 
 // =======================
@@ -956,6 +974,6 @@ body.fixed{
 }
 
 .footer__copyright{
-    font-size: 1.3em;
+    font-size: 1.125em;
     color: rgb(187, 173, 173);
 }

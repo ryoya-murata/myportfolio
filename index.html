@@ -63,10 +63,15 @@
     <div class="top">
        <div class="top__img-wrap">
            <div class="top__letters-wrap">
-               <span class="top__letter">最</span><!-- /.top__letter -->
-               <span class="top__letter">高</span><!-- /.top__letter -->
+               <span class="top__letter">世</span><!-- /.top__letter -->
+               <span class="top__letter">界</span><!-- /.top__letter -->
+               <span class="top__letter">で</span><!-- /.top__letter -->
+               <span class="top__letter">1</span><!-- /.top__letter -->
+               <span class="top__letter">つ</span><!-- /.top__letter -->
+               <span class="top__letter">だ</span><!-- /.top__letter -->
+               <span class="top__letter">け</span><!-- /.top__letter -->
                <span class="top__letter">の</span><!-- /.top__letter -->
-               <br class="is-tab">
+               <br>
                <span class="top__letter">w</span><!-- /.top__letter -->
                <span class="top__letter">e</span><!-- /.top__letter -->
                <span class="top__letter">b</span><!-- /.top__letter -->
@@ -74,6 +79,13 @@
                <span class="top__letter">イ</span><!-- /.top__letter -->
                <span class="top__letter">ト</span><!-- /.top__letter -->
                <span class="top__letter">を</span><!-- /.top__letter -->
+               <br class="is-tab">
+               <span class="top__letter">お</span><!-- /.top__letter -->
+               <span class="top__letter">届</span><!-- /.top__letter -->
+               <span class="top__letter">け</span><!-- /.top__letter -->
+               <span class="top__letter">し</span><!-- /.top__letter -->
+               <span class="top__letter">ま</span><!-- /.top__letter -->
+               <span class="top__letter">す</span><!-- /.top__letter -->
            </div><!-- /.top__letters-wrap -->
            <img src="./img/hero_bg.jpg" alt="" class="top__img">
            <div class="top__button-wrap">
@@ -248,35 +260,54 @@
                 <h2 class="section__title">Contact</h2><!-- /.about_title -->
                 <p class="section__title-desc">ーお問い合わせー</p><!-- /.section__title--jp -->
             </div><!-- /.section__heads -->
-            <div class="section__desc">下記のお問い合わせフォームからご連絡よろしくお願いします。</div><!-- /.section__desc -->
-            <form action="" class="form">
+            <div class="section__desc section__desc--contact">下記のお問い合わせフォームからご連絡よろしくお願いします。</div><!-- /.section__desc -->
+            <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2_Uup7nXL74oImaGDhvusVMTMXrt12H-p7hRvkL9GPj8wzg/formResponse" class="form">
                 <div class="form__table-wrap">
                     <table class="form__table">
                         <tr class="form__item">
                             <th class="form__label-wrap"><span class="form__label form__label--input_required">お名前</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
                             <td class="form__input-wrap">
-                                <input type="text" class="form__input" required>
+                                <input type="text" class="form__input" name="entry.1502365574"  required>
                                 <p class="form__example">例）山田 太郎</p><!-- /.form__example -->
+                            </td><!-- /.form__input-wrap -->
+                        </tr><!-- /.form__item -->
+                        <tr class="form__item">
+                            <th class="form__label-wrap"><span class="form__label form__label--input_required">フリガナ</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
+                            <td class="form__input-wrap">
+                                <input type="text" class="form__input" name="entry.1950046508"   required>
+                                <p class="form__example">例）ヤマダ　タロウ</p><!-- /.form__example -->
                             </td><!-- /.form__input-wrap -->
                         </tr><!-- /.form__item -->
                         <tr class="form__item">
                             <th class="form__label-wrap"><span class="form__label form__label--input_required">メールアドレス</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
                             <td class="form__input-wrap">
-                                <input type="email" class="form__input" required>
+                                <input type="email" class="form__input" name="entry.1238078674"   required>
                                 <p class="form__example">例）aaa@example.com</p><!-- /.form__example -->
                             </td><!-- /.form__input-wrap -->
                         </tr><!-- /.form__item -->
                         <tr class="form__item">
-                            <th class="form__label-wrap form__label-wrap--textarea"><span class="form__label form__label--input_optional">メッセ―ジ</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
-                            <td class="form__textarea-wrap"><textarea name="" id=""  class="form__textarea"></textarea><!-- /.form__textarea --><!-- /.form__textarea-wrap -->
+                            <th class="form__label-wrap"><span class="form__label form__label--input_optional">電話番号</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
+                            <td class="form__input-wrap">
+                                <input type="tel" class="form__input" name="entry.491443764"  >
+                                <p class="form__example">例）12345678901</p><!-- /.form__example -->
+                            </td><!-- /.form__input-wrap -->
+                        </tr><!-- /.form__item -->
+                        <tr class="form__item">
+                            <th class="form__label-wrap form__label-wrap--textarea"><span class="form__label form__label--input_optional">お問い合わせ内容</span><!-- /.form__label --></th><!-- /.form__label-wrap -->
+                            <td class="form__textarea-wrap"><textarea name="entry.1387874459" id=""  class="form__textarea"   ></textarea><!-- /.form__textarea --><!-- /.form__textarea-wrap -->
                         </tr><!-- /.form__item -->
                     </table>
                 </div>
                 <div class="form__button-wrap">
-                    <a href="#" class="button form__button">送信</a><!-- /.button form__button -->
+                    <input type="submit" class="button form__button"><!-- /.button form__button -->
                 </div><!-- /.form__button-wrap -->
             </form><!-- /.form -->
-
+            <div class="form__messages-wrap">
+                <p class="form__end-message">お問い合わせありがとうございます
+                    <br>メッセージは正常に送信されました
+                </p><!-- /.form__end-message -->
+                <p class="form__false-message">※送信に失敗しました</p><!-- /.form__false-message -->
+            </div><!-- /.form__messages-wrap -->
         </div><!-- /.section__inner contact__inner -->
     </section><!-- /.section contact -->
 
