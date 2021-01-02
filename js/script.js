@@ -68,6 +68,30 @@ $(function(){
     })
 })
 
+$(function () {
+    // クリック時の動作
+    $('.hamberger__line-wrap').on('click', function() {
+        var scrollpos;
+
+        // メニューを閉じる
+        if($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('.hamberger-menu').removeClass('open');
+            $('.overlay').removeClass('open');
+            $('body').removeClass('fixed');
+
+
+        // メニューを開く
+        } else {
+            $(this).addClass('open');
+            $('.hamberger-menu').addClass('open');
+            $('.overlay').addClass('open');
+            $('body').addClass('fixed');
+        }
+    });
+});
+
+
 
 //==================
 // top
@@ -94,7 +118,7 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     initialSlide: 0,
     centeredSlides : true,
@@ -103,5 +127,10 @@ var mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
+    },
+    breakpoints:{
+        767:{
+            slidesPerView: 2,
+        }
     }
 });
