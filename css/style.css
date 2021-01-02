@@ -245,6 +245,149 @@ img {
   border-bottom: 1px solid #fff;
 }
 
+.hamberger {
+  z-index: 120;
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .hamberger {
+    display: block;
+  }
+}
+
+.hamberger__line-wrap {
+  display: inline-block;
+  width: 36px;
+  height: 28px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  z-index: 200;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.hamberger__line-wrap.open {
+  -webkit-transform: translateX(-40vw);
+          transform: translateX(-40vw);
+}
+
+.hamberger__line {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.hamberger__line:nth-of-type(1) {
+  top: 0;
+}
+
+.hamberger__line-wrap.open .hamberger__line:nth-of-type(1) {
+  -webkit-transform: translateY(12px) rotate(-45deg);
+          transform: translateY(12px) rotate(-45deg);
+}
+
+.hamberger__line:nth-of-type(2) {
+  top: 12px;
+}
+
+.hamberger__line-wrap.open .hamberger__line:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hamberger__line:nth-of-type(3) {
+  bottom: 0;
+}
+
+.hamberger__line-wrap.open .hamberger__line:nth-of-type(3) {
+  -webkit-transform: translateY(-12px) rotate(45deg);
+          transform: translateY(-12px) rotate(45deg);
+}
+
+.hamberger-menu {
+  width: 40vw;
+  height: 100%;
+  background-color: #332f2f;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 300;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.hamberger-menu.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hamberger-menu__item {
+  padding: 1em 0;
+  border-bottom: 1px dashed #707070;
+  display: -webkit-box;
+  /* safari, Chrome */
+  display: -moz-box;
+  /* Firefox */
+  display: -o-box;
+  /* Opera */
+  display: -ms-box;
+  /* IE */
+  display: box;
+  /* ベンダープレフィックスなし */
+  -webkit-box-align: center;
+  /* safari, Chrome */
+  /* Firefox */
+  -o-box-align: center;
+  /* Opera */
+  -ms-box-align: center;
+  /* IE */
+  box-align: center;
+  /* ベンダープレフィックスなし */
+  padding-left: 20px;
+}
+
+.hamberger-menu__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overlay {
+  background: #000000CC;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+  z-index: 110;
+}
+
+.overlay.open {
+  opacity: 1;
+}
+
+body.fixed {
+  width: 100%;
+  overflow-y: hidden;
+}
+
 .top {
   width: 100%;
   height: 100vh;
