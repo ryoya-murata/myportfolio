@@ -274,8 +274,8 @@ img {
 }
 
 .hamberger__line-wrap.open {
-  -webkit-transform: translateX(-40vw);
-          transform: translateX(-40vw);
+  -webkit-transform: translateX(calc(-40vw + 20px));
+          transform: translateX(calc(-40vw + 20px));
 }
 
 .hamberger__line {
@@ -376,16 +376,17 @@ img {
   opacity: 0;
   -webkit-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
+  z-index: -10;
 }
 
 .overlay.open {
   opacity: 1;
-  z-index: 110;
+  z-index: 100;
 }
 
 body.fixed {
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .top {
