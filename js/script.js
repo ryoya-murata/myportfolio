@@ -97,17 +97,23 @@ $(function () {
 // top
 //==================
 
-var tl = new TimelineMax();
-
-tl.fromTo('.top__img-wrap',1,{
-    height:'0%'
+TweenMax.fromTo('.top__img-wrap',1.5,{
+    opacity:0
 },{
-    height:'100%',ease:"power2.easeInOut",delay:.2
-}).staggerFromTo('.top__letter',1,{
+    opacity:1,ease:"power2.easeInOut",delay:.2
+});
+TweenMax.fromTo('.top__button-wrap',1.5,{
+    opacity:0
+},{
+    opacity:1
+});
+TweenMax.staggerFromTo('.top__letter',1,{
     x:'1em',y:'1.2em',rotateZ:180
 },{
-    x:0,y:0,rotateZ:0,ease:"power2.easeInOut"
+    x:0,y:0,rotateZ:0,ease:"power2.easeInOut",delay:.5
 },0.05);
+
+
 
 //==================
 // works
