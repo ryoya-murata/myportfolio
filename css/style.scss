@@ -175,8 +175,6 @@ $breakpoints: (
     }
 }
 
-
-
 // =======================
 //  z-index
 // =======================
@@ -303,7 +301,7 @@ $layer: (
     transition: transform .5s;
 
     &.open{
-        transform: translateX(calc(-40vw + 20px));
+        transform: translateX(-40vw);
     }
 }
 
@@ -359,7 +357,7 @@ $layer: (
 }
 
 .hamberger-menu__item {
-    padding: 1em 0;
+    padding: .2em 0;
     border-bottom: 1px solid #707070;
     display: -webkit-box; /* safari, Chrome */
     display: -moz-box;    /* Firefox */
@@ -371,13 +369,14 @@ $layer: (
     -o-box-align: center;      /* Opera */
     -ms-box-align: center;     /* IE */
     box-align: center;         /* ベンダープレフィックスなし */
-    padding-left: 20px;
 
 }
 
 .hamberger-menu__link{
+    width: 100%;
     color: #fff;
     text-decoration: none;
+    padding: .8em 0 1em .8em;
 }
 
 .overlay{
@@ -394,7 +393,7 @@ $layer: (
 
 .overlay.open{
     opacity: 1;
-    z-index: 100;
+    z-index: 110;
 }
 
 
@@ -403,7 +402,7 @@ $layer: (
 // メニュー開いたときに背景固定
 body.fixed{
     width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -444,9 +443,8 @@ body.fixed{
 
     @include mq('sp'){
         left: 5%;
-        font-size: 2.125em;
+        font-size: 2.5em;
     }
-    
 }
 
 .top__letter{
@@ -905,7 +903,7 @@ body.fixed{
     max-width: 200px;
     padding: 14px 18px;
     border: 3px solid $main-bg-color;
-    border-radius: 10px;
+    border-radius: 15px;
     color: $main-bg-color;
     background: #fff;
     font-size: 1.125em;
@@ -918,18 +916,19 @@ body.fixed{
 
 .form__end-message{
     display: none;
-    text-align: center;
-    padding: 3em 0;
-    background: #f8f9fa ;
+    padding: 1em 0;
+    background: #f8f9fa;
     font-size: 1.125em;
+    text-align: center;
 }
 
 .form__false-message{
     display: none;
+    padding: 1em 0;
+    background: #f8f9fa;
+    font-size: 1.125em;
     text-align: center;
     color: #ff0000;
-    background: #f8f9fa ;
-    font-size: 1.125em;
 }
 
 
@@ -974,6 +973,6 @@ body.fixed{
 }
 
 .footer__copyright{
-    font-size: 1.125em;
+    font-size: 1.3em;
     color: rgb(187, 173, 173);
 }

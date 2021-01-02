@@ -274,8 +274,8 @@ img {
 }
 
 .hamberger__line-wrap.open {
-  -webkit-transform: translateX(calc(-40vw + 20px));
-          transform: translateX(calc(-40vw + 20px));
+  -webkit-transform: translateX(-40vw);
+          transform: translateX(-40vw);
 }
 
 .hamberger__line {
@@ -337,7 +337,7 @@ img {
 }
 
 .hamberger-menu__item {
-  padding: 1em 0;
+  padding: .2em 0;
   border-bottom: 1px solid #707070;
   display: -webkit-box;
   /* safari, Chrome */
@@ -358,12 +358,13 @@ img {
   /* IE */
   box-align: center;
   /* ベンダープレフィックスなし */
-  padding-left: 20px;
 }
 
 .hamberger-menu__link {
+  width: 100%;
   color: #fff;
   text-decoration: none;
+  padding: .8em 0 1em .8em;
 }
 
 .overlay {
@@ -381,12 +382,12 @@ img {
 
 .overlay.open {
   opacity: 1;
-  z-index: 100;
+  z-index: 110;
 }
 
 body.fixed {
   width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .top {
@@ -430,7 +431,7 @@ body.fixed {
 @media screen and (max-width: 767px) {
   .top__letters-wrap {
     left: 5%;
-    font-size: 2.125em;
+    font-size: 2.5em;
   }
 }
 
@@ -886,7 +887,7 @@ body.fixed {
   max-width: 200px;
   padding: 14px 18px;
   border: 3px solid #332f2f;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #332f2f;
   background: #fff;
   font-size: 1.125em;
@@ -899,18 +900,19 @@ body.fixed {
 
 .form__end-message {
   display: none;
-  text-align: center;
-  padding: 3em 0;
+  padding: 1em 0;
   background: #f8f9fa;
   font-size: 1.125em;
+  text-align: center;
 }
 
 .form__false-message {
   display: none;
-  text-align: center;
-  color: #ff0000;
+  padding: 1em 0;
   background: #f8f9fa;
   font-size: 1.125em;
+  text-align: center;
+  color: #ff0000;
 }
 
 .footer {
@@ -948,7 +950,7 @@ body.fixed {
 }
 
 .footer__copyright {
-  font-size: 1.125em;
+  font-size: 1.3em;
   color: #bbadad;
 }
 /*# sourceMappingURL=style.css.map */
