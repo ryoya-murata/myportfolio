@@ -283,6 +283,13 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .top__letters-wrap {
+    left: 5%;
+    font-size: 2.5em;
+  }
+}
+
 .top__letter {
   display: inline-block;
   font-family: 'Source Serif Pro', serif;
