@@ -469,6 +469,10 @@ $layer: (
 .skill__icon-wrap{
     text-align: center;
     padding: 2.5em 0;
+
+    @include mq('sp'){
+        padding: 1.8em 0;
+    }
 }
 
 .skill__title{

@@ -447,6 +447,12 @@ img {
   padding: 2.5em 0;
 }
 
+@media screen and (max-width: 767px) {
+  .skill__icon-wrap {
+    padding: 1.8em 0;
+  }
+}
+
 .skill__title {
   font-size: 1.3em;
   text-align: center;
