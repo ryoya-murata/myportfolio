@@ -338,7 +338,7 @@ img {
 
 .hamberger-menu__item {
   padding: 1em 0;
-  border-bottom: 1px dashed #707070;
+  border-bottom: 1px solid #707070;
   display: -webkit-box;
   /* safari, Chrome */
   display: -moz-box;
@@ -376,11 +376,11 @@ img {
   opacity: 0;
   -webkit-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
-  z-index: 110;
 }
 
 .overlay.open {
   opacity: 1;
+  z-index: 110;
 }
 
 body.fixed {
@@ -436,6 +436,29 @@ body.fixed {
 .top__letter {
   display: inline-block;
   font-family: 'Source Serif Pro', serif;
+}
+
+.top__button-wrap {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10%;
+}
+
+.top__button {
+  max-width: 300px;
+  width: 100%;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  color: #fff;
+  background: #0ce29b;
+  font-size: 1.125em;
+}
+
+.top__button:hover {
+  color: #fff;
+  background: #332f2f;
 }
 
 .about {
