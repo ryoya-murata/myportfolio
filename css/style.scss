@@ -388,7 +388,7 @@ $layer: (
     height: 100%;
     opacity: 0;
     transition: opacity ease 0.5s;
-    
+    z-index: -10;
 }
 
 .overlay.open{
@@ -914,6 +914,22 @@ body.fixed{
     }
 }
 
+.form__end-message{
+    display: none;
+    padding: 1em 0;
+    background: #f8f9fa;
+    font-size: 1.125em;
+    text-align: center;
+}
+
+.form__false-message{
+    display: none;
+    padding: 1em 0;
+    background: #f8f9fa;
+    font-size: 1.125em;
+    text-align: center;
+    color: #ff0000;
+}
 
 
 // =======================
