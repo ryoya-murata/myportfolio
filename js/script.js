@@ -134,3 +134,32 @@ var mySwiper = new Swiper('.swiper-container', {
         }
     }
 });
+
+//==================
+// contact
+//==================
+
+$(document).ready(function () {
+
+    $('#form').submit(function (event) {
+      var formData = $('#form').serialize();
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2_Uup7nXL74oImaGDhvusVMTMXrt12H-p7hRvkL9GPj8wzg/formResponse",
+        data: formData,
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function () {
+            $(".form__end-message").fadeIn();
+            $(".form,.section__desc--contact").fadeOut();
+            //window.location.href = "thanks.html";
+          },
+          200: function () {
+            $(".form__false-message").fadeIn();
+          }
+        }
+      });
+      event.preventDefault();
+    });
+
+  });
