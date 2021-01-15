@@ -301,7 +301,7 @@ $layer: (
     transition: transform .5s;
 
     &.open{
-        transform: translateX(-40vw);
+        transform: translateX(-190px);
     }
 }
 
@@ -341,7 +341,7 @@ $layer: (
 }
 
 .hamberger-menu {
-    width: 40vw;
+    width: 200px;
     height: 100%;
     background-color: $main-bg-color;
     position: fixed;
@@ -369,14 +369,14 @@ $layer: (
     -o-box-align: center;      /* Opera */
     -ms-box-align: center;     /* IE */
     box-align: center;         /* ベンダープレフィックスなし */
-
+    padding: .8em 0 .8em .8em;
 }
 
 .hamberger-menu__link{
     width: 100%;
     color: #fff;
     text-decoration: none;
-    padding: .8em 0 1em .8em;
+    display: inline-block;
 }
 
 .overlay{
