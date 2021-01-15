@@ -274,8 +274,8 @@ img {
 }
 
 .hamberger__line-wrap.open {
-  -webkit-transform: translateX(-40vw);
-          transform: translateX(-40vw);
+  -webkit-transform: translateX(-190px);
+          transform: translateX(-190px);
 }
 
 .hamberger__line {
@@ -318,7 +318,7 @@ img {
 }
 
 .hamberger-menu {
-  width: 40vw;
+  width: 200px;
   height: 100%;
   background-color: #332f2f;
   position: fixed;
@@ -358,13 +358,14 @@ img {
   /* IE */
   box-align: center;
   /* ベンダープレフィックスなし */
+  padding: .8em 0 .8em .8em;
 }
 
 .hamberger-menu__link {
   width: 100%;
   color: #fff;
   text-decoration: none;
-  padding: .8em 0 1em .8em;
+  display: inline-block;
 }
 
 .overlay {
@@ -454,7 +455,7 @@ body.fixed {
   padding: 1em 1.5em;
   border-radius: 5px;
   color: #fff;
-  background: #0ce29b;
+  background: #e6a926;
   font-size: 1.125em;
 }
 
@@ -1013,7 +1014,7 @@ body.fixed {
 }
 
 .footer__copyright {
-  font-size: 1.3em;
+  font-size: 0.875em;
   color: #bbadad;
 }
 /*# sourceMappingURL=style.css.map */
