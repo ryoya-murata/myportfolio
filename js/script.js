@@ -3,14 +3,10 @@
 //==================
 
 $(function(){
-    // windowsがスクロールされたときに以下の内容を実行
     $(window).scroll(function(){    
-        // windowの現在のスクロール位置を取得
         var scrollTop = $(window).scrollTop();
-        // 対象エリアの高さを取得
         var areaHeight = $('.top').innerHeight();
         
-        // 現在のスクロール位置が対象エリアの半分より大きければ以下の内容を実行
         if(scrollTop > areaHeight/2){
             $('.header').addClass('header--bg_brown');
         } else {
@@ -73,15 +69,11 @@ $(function () {
     $('.hamberger__line-wrap').on('click', function() {
         var scrollpos;
 
-        // メニューを閉じる
         if($(this).hasClass('open')) {
             $(this).removeClass('open');
             $('.hamberger-menu').removeClass('open');
             $('.overlay').removeClass('open');
             $('body').removeClass('fixed');
-
-
-        // メニューを開く
         } else {
             $(this).addClass('open');
             $('.hamberger-menu').addClass('open');
@@ -161,7 +153,6 @@ $(document).ready(function () {
           0: function () {
             $(".form__end-message").fadeIn();
             $(".form,.section__desc--contact").fadeOut();
-            //window.location.href = "thanks.html";
           },
           200: function () {
             $(".form__false-message").fadeIn();
