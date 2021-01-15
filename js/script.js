@@ -129,6 +129,9 @@ var mySwiper = new Swiper('.swiper-container', {
     initialSlide: 0,
     centeredSlides : true,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
