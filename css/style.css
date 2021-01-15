@@ -886,16 +886,22 @@ body.fixed {
   width: 100%;
   max-width: 200px;
   padding: 14px 18px;
-  border: 3px solid #332f2f;
   border-radius: 15px;
-  color: #332f2f;
   background: #fff;
+  color: #1c1b15;
   font-size: 1.125em;
+  border: 2px solid #332f2f;
 }
 
 .form__button:hover {
   color: #fff;
   background: #332f2f;
+}
+
+.form__button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
 }
 
 .form__end-message {

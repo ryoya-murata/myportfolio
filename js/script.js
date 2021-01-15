@@ -169,3 +169,19 @@ $(document).ready(function () {
     });
 
   });
+
+  $(function(){
+    let $submit = $('#js-submit')
+    $('#form input , #form textarea').on( 'change', function(){
+        if(
+            $( '#form input[name="entry.1502365574"]').val() !== "" &&
+            $( '#form input[name="entry.1950046508"]').val() !== "" &&
+            $( '#form input[type="email"]').val() !== "" 
+        ){
+            $submit.prop('disabled', false)
+        } else {
+            $submit.prop('disabled',true)
+        }
+    })
+
+  })
