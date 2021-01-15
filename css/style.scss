@@ -902,16 +902,21 @@ body.fixed{
     width: 100%;
     max-width: 200px;
     padding: 14px 18px;
-    border: 3px solid $main-bg-color;
     border-radius: 15px;
-    color: $main-bg-color;
-    background: #fff;
+    background:#fff;
+    color: $font-color;
     font-size: 1.125em;
+    border: 2px solid $main-bg-color;
 
     &:hover{
         color: #fff;
         background: $main-bg-color;
     }
+}
+.form__button:disabled{
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #fff;
 }
 
 .form__end-message{
@@ -930,6 +935,7 @@ body.fixed{
     text-align: center;
     color: #ff0000;
 }
+
 
 
 // =======================
