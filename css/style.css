@@ -707,6 +707,18 @@ body.fixed {
   margin-bottom: .8em;
 }
 
+.work__desc {
+  margin-bottom: 0;
+}
+
+.work__basic {
+  margin-bottom: 2em;
+}
+
+.work__items {
+  margin-bottom: 1em;
+}
+
 .works__item {
   width: 100%;
   display: block;
@@ -726,6 +738,8 @@ body.fixed {
   display: block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .works__img:hover {
@@ -760,8 +774,51 @@ body.fixed {
           transform: translateX(-2px);
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination {
+  position: static;
+  text-align: center;
+  padding-left: 4px;
+}
+
+.work__pagination {
+  margin-bottom: 2.25em;
+}
+
+@media screen and (max-width: 767px) {
+  .work__pagination {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
   background: #332f2f;
+  margin-right: 1.25em;
+  position: relative;
+  opacity: 0.9;
+}
+
+.swiper-pagination-bullet:focus {
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #332f2f;
+  border-radius: 50%;
 }
 
 .contact {
