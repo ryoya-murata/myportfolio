@@ -535,6 +535,12 @@ body.fixed {
 
 .about__intro {
   margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+.about__name {
+  color: #ff0000;
+  font-size: 1.2em;
 }
 
 .about__reason {

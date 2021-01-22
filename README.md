@@ -25,7 +25,8 @@
 * "swiper" is under [MIT license](unpkg.com/browse/swiper@6.4.5/LICENSE).
 * Copyright (c) 2019 Vladimir Kharlampidi
  
+
+* "jQuery" is under the [MIT license](https://jquery.org/license/)
+
 * Copyright 2005, 2013 jQuery Foundation, Inc. and other contributors
-* Released under the MIT license
-* https://jquery.org/license/
  
