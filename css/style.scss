@@ -226,6 +226,10 @@ $layer: (
   }
 }
 
+.header__logo{
+  display: inline-block;
+}
+
 .header__list {
   display: flex;
 }
@@ -924,7 +928,6 @@ body.fixed {
   width: 100%;
   max-width: 200px;
   padding: 14px 18px;
-  border-radius: 15px;
   background: #fff;
   color: $font-color;
   font-size: 1.125em;
