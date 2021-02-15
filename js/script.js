@@ -1,4 +1,24 @@
 //==================
+// loading
+//==================
+
+var bg = $('.loading'),
+    loader = $('.loading__img');
+/* ローディング画面の非表示を解除 */
+bg.removeClass('is-hide');
+loader.removeClass('is-hide');
+
+/* 読み込み完了 */
+$(window).on('load', function(){
+    bg.delay(900).fadeOut(800);
+    loader.delay(900).fadeOut(300);
+});
+
+/* 10秒経ったら強制的にローディング画面を非表示にする */
+setTimeout('stopload()',10000);
+
+
+//==================
 // header
 //==================
 
@@ -89,20 +109,12 @@ $(function () {
 // top
 //==================
 
-TweenMax.fromTo('.top__img-wrap',1.5,{
-    opacity:0
-},{
-    opacity:1,ease:"power2.easeInOut",delay:.2
-});
-TweenMax.fromTo('.top__button-wrap',1.5,{
-    opacity:0
-},{
-    opacity:1
-});
+
+
 TweenMax.staggerFromTo('.top__letter',1,{
-    x:'1em',y:'1.2em',rotateZ:180
+    opacity:0,x:'1em',y:'1em'
 },{
-    x:0,y:0,rotateZ:0,ease:"power2.easeInOut",delay:.5
+    opacity:1,x:0,y:0,rotateZ:0,ease:"power2.easeInOut",delay:1.7
 },0.05);
 
 
