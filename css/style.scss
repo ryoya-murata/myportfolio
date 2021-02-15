@@ -168,11 +168,16 @@ $breakpoints: (
   }
 }
 
+.is-hide{
+  display: none;
+}
+
 // =======================
 //  z-index
 // =======================
 
 $layer: (
+  loading:200,
   modal: 100,
   drawer: 40,
   sp-menu: 35,
@@ -180,6 +185,29 @@ $layer: (
   header: 20,
   default: 1,
 );
+
+// =======================
+//  loading
+// =======================
+
+.loading{
+  width:100vw;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: map-get($layer , "loading" );
+}
+
+.loading__img{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 // =======================
 //  header
@@ -398,11 +426,12 @@ body.fixed {
 // =======================
 
 .top {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include mq('sp'){
+    height: 80vh;
+  }
 }
 
 .top__img-wrap {
@@ -428,7 +457,7 @@ body.fixed {
 
   @include mq("sp") {
     left: 5%;
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 }
 
@@ -446,11 +475,15 @@ body.fixed {
 
 .top__button {
   max-width: 300px;
-  width: 100%;
   padding: 1em 1.5em;
   color: #fff;
-  background: rgb(230, 169, 38);
-  font-size: 1.125em;
+  background: rgb(44, 196, 56);
+
+  @include mq('sp'){
+    padding: 1em 1.25em;
+    min-width: 168px;
+  }
+
   
 
  
