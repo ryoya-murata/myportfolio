@@ -108,7 +108,7 @@ if (isset($_POST['back']) && $_POST['back']) {
         <header class="header">
             <div class="header__inner">
                 <div class="header__logo-wrap">
-                    <a href="#" class="header__logo"><img src="./img/logo-white.png" alt="ロゴ" class="header__logo-img"></a><!-- /.header__logo -->
+                    <a href="#" class="header__logo"><img src="./img/logo.png" alt="ロゴ" class="header__logo-img"></a><!-- /.header__logo -->
                 </div><!-- /.header__logo-wrap -->
                 <div class="header__list-wrap is-pc">
                     <ul class="header__list">
