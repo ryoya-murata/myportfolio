@@ -152,42 +152,34 @@ var mySwiper = new Swiper('.swiper-container', {
 // contact
 //==================
 
-$(document).ready(function () {
 
-    $('#form').submit(function (event) {
-      var formData = $('#form').serialize();
-      $.ajax({
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2_Uup7nXL74oImaGDhvusVMTMXrt12H-p7hRvkL9GPj8wzg/formResponse",
-        data: formData,
-        type: "POST",
-        dataType: "xml",
-        statusCode: {
-          0: function () {
-            $(".form__end-message").fadeIn();
-            $(".form,.section__desc--contact").fadeOut();
-          },
-          200: function () {
-            $(".form__false-message").fadeIn();
-          }
-        }
-      });
-      event.preventDefault();
-    });
-
-  });
 
   $(function(){
     let $submit = $('#js-submit')
     $('#form input , #form textarea').on( 'change', function(){
         if(
-            $( '#form input[name="entry.1502365574"]').val() !== "" &&
-            $( '#form input[name="entry.1950046508"]').val() !== "" &&
-            $( '#form input[type="email"]').val() !== "" 
+            $( '#form input[name="name"]').val() !== "" &&
+            $( '#form input[name="ruby"]').val() !== "" &&
+            $( '#form input[name="email"]').val() !== "" 
         ){
             $submit.prop('disabled', false)
         } else {
             $submit.prop('disabled',true)
         }
     })
+
+    $(window).on( 'load', function(){
+        if(
+            $( '#form input[name="name"]').val() !== "" &&
+            $( '#form input[name="ruby"]').val() !== "" &&
+            $( '#form input[name="email"]').val() !== "" 
+        ){
+            $submit.prop('disabled', false)
+        } else {
+            $submit.prop('disabled',true)
+        }
+    })
+
+
 
   })
