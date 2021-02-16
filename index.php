@@ -183,12 +183,12 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <h2 class="section__title">ー自己紹介ー</h2><!-- /.about_title -->
                     </div><!-- /.section__heads -->
                     <div class="about__contents-wrap">
-                        <div class="about__content about__content--img">
+                        <div class="about__content about__content--img js-hide">
                             <div class="about__img-wrap">
                                 <img src="./img/profile.jpg" alt="自己紹介" class="about__img" loading="lazy">
                             </div><!-- /.about__img-wrap -->
                         </div><!-- /.about__content about__content--img -->
-                        <div class="about__content about__content--desc">
+                        <div class="about__content about__content--desc js-hide">
                             <p class="about__intro">
                                 はじめまして！<span class="about__name">リョーヤ</span>といいます！<br>現在大学2年で都内の理系大学に在学しています！<br>
                                 Web制作を4月に知り、そこから勉強を続けています！
@@ -207,48 +207,48 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <h2 class="section__title">ースキルー</h2><!-- /.about_title -->
                     </div><!-- /.section__heads -->
                     <div class="skills">
-                        <div class="skill__item">
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fab fa-html5 fa-4x"></i></span>
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">HTML/CSS</div><!-- /.skill__title -->
                             <div class="skill__desc">HTML/CSSを用いた静的なWebサイトのコーディングが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
-                        <div class="skill__item">
+                        </div><!-- /.skill__item js-hide -->
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fas fa-mobile-alt fa-4x"></i></span><!-- /.skill__icon -->
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">レスポンシブ対応</div><!-- /.skill__title -->
                             <div class="skill__desc">レスポンシブ対応したWebサイトを制作することが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
-                        <div class="skill__item">
+                        </div><!-- /.skill__item js-hide -->
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fab fa-js-square fa-4x"></i></span><!-- /.skill__icon -->
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">jQuery</div><!-- /.skill__title -->
                             <div class="skill__desc">jQueryを用いてWebサイトに動きをつけることが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
-                        <div class="skill__item">
+                        </div><!-- /.skill__item js-hide -->
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fab fa-sass fa-4x"></i></span><!-- /.skill__icon -->
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">Sass</div><!-- /.skill__title -->
                             <div class="skill__desc">Sassを用いてCSSを効率よく書くことが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
-                        <div class="skill__item">
+                        </div><!-- /.skill__item js-hide -->
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fab fa-wordpress fa-4x"></i></span><!-- /.skill__icon -->
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">WordPress</div><!-- /.skill__title -->
                             <div class="skill__desc">WordPressを用いてコーポレートサイトやブログサイトを作ることが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
-                        <div class="skill__item">
+                        </div><!-- /.skill__item js-hide -->
+                        <div class="skill__item js-hide">
                             <div class="skill__icon-wrap">
                                 <span class="skill__icon"><i class="fab fa-github fa-4x"></i></span><!-- /.skill__icon -->
                             </div><!-- /.skill__icon-wrap -->
                             <div class="skill__title">Git</div><!-- /.skill__title -->
                             <div class="skill__desc">Githubを用いてソースコードを管理することが可能です。</div><!-- /.skill__desc -->
-                        </div><!-- /.skill__item -->
+                        </div><!-- /.skill__item js-hide -->
                     </div><!-- /.skills -->
                 </div><!-- /.section__inner skill__inner -->
             </section><!-- /.section skill -->
@@ -260,7 +260,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <h2 class="section__title">ー制作の流れー</h2><!-- /.about_title -->
                     </div><!-- /.section__heads -->
                     <div class="cards">
-                        <div class="cards__item card">
+                        <div class="cards__item card js-hide">
                             <div class="card__img-wrap">
                                 <img src="./img/flow-img/hearing.jpg" alt="ヒアリング" class="card__img" loading="lazy">
                             </div><!-- /.card__img-wrap -->
@@ -268,8 +268,8 @@ if (isset($_POST['back']) && $_POST['back']) {
                                 <div class="card__title">1.ヒアリング</div><!-- /.card__title -->
                                 <div class="card__desc">お客様のご期待に沿った最適な提案をいたします。</div><!-- /.card__desc -->
                             </div><!-- /.card__body -->
-                        </div><!-- /.cards__item card -->
-                        <div class="cards__item card">
+                        </div><!-- /.cards__item card js-hide -->
+                        <div class="cards__item card js-hide">
                             <div class="card__img-wrap">
                                 <img src="./img/flow-img/coding.jpg" alt="コーディング" class="card__img" loading="lazy">
                             </div><!-- /.card__img-wrap -->
@@ -277,8 +277,8 @@ if (isset($_POST['back']) && $_POST['back']) {
                                 <div class="card__title">2.コーディング</div><!-- /.card__title -->
                                 <div class="card__desc">作成されたデザインカンプをもとにWebサイトを作成していきます。</div><!-- /.card__desc -->
                             </div><!-- /.card__body -->
-                        </div><!-- /.cards__item card -->
-                        <div class="cards__item card">
+                        </div><!-- /.cards__item card js-hide -->
+                        <div class="cards__item card js-hide">
                             <div class="card__img-wrap">
                                 <img src="./img/flow-img/finish.jpg" alt="納品" class="card__img" loading="lazy">
                             </div><!-- /.card__img-wrap -->
@@ -286,7 +286,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                                 <div class="card__title">3.納品</div><!-- /.card__title -->
                                 <div class="card__desc">期日に余裕をもって納品いたします。</div><!-- /.card__desc -->
                             </div><!-- /.card__body -->
-                        </div><!-- /.cards__item card -->
+                        </div><!-- /.cards__item card js-hide -->
                     </div><!-- /.cards -->
                 </div><!-- /.section__inner flow__inner -->
             </section><!-- /.section flow -->
@@ -299,7 +299,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                     </div><!-- /.section__heads -->
                     <div class="section__desc work__desc">作成したWebサイトを掲載いたします。クリックするとそのサイトに移動します。</div><!-- /.section__desc -->
                     <p class="work__basic">※Basic認証があるサイトはユーザー名：portfolio、パスワード：a9VXhWzYを入力してください。</p><!-- /.work__basic -->
-                    <div class="works-wrap work__items swiper-container">
+                    <div class="works-wrap work__items swiper-container js-hide">
                         <div class="works swiper-wrapper">
                             <div class="works__item-wrap swiper-slide">
                                 <a href="https://30days.ryoya-web.com" class="works__item" target="_blank" rel="noopener noreferrer">
@@ -325,7 +325,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div><!-- /.works-wrap swiper-container -->
-                    <div class="swiper-pagination swiper-pagination--black work__pagination"></div>
+                    <div class="swiper-pagination swiper-pagination--black work__pagination js-hide"></div>
                 </div><!-- /.section__inner works__inner -->
             </section><!-- /.section work -->
 
@@ -336,7 +336,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <h2 class="section__title">ーお問い合わせー</h2><!-- /.about_title -->
                     </div><!-- /.section__heads -->
                     <div class="section__desc section__desc--contact">下記のお問い合わせフォームからご連絡よろしくお願いします。</div><!-- /.section__desc -->
-                    <form id="form" action="./index.php" class="form" method="POST" novalidate>
+                    <form id="form" action="./index.php" class="form js-hide" method="POST" novalidate>
                         <?php if ($errmessage) : ?>
                             <div class="err-message">
                                 <?php echo implode('<br>', $errmessage); ?>

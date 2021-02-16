@@ -183,3 +183,21 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
   })
+
+// ===============
+// フェードイン
+// ===============
+
+$(function(){
+    $(window).scroll(function (){
+      $(".js-hide").each(function(){
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > position - windowHeight/1.3){
+            $(this).addClass('js-show');
+        } 
+      });
+    });
+  });
+  
