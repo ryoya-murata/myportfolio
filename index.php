@@ -190,7 +190,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         </div><!-- /.about__content about__content--img -->
                         <div class="about__content about__content--desc js-hide">
                             <p class="about__intro">
-                                はじめまして！<span class="about__name">リョーヤ</span>といいます！<br>現在大学2年で都内の理系大学に在学しています！<br>
+                                はじめまして！<span class="about__name">りょーや</span>といいます！<br>現在大学2年で都内の理系大学に在学しています！<br>
                                 Web制作を4月に知り、そこから勉強を続けています！
                             </p><!-- /.about__intro -->
                             <a href="https://twitter.com/Ryoya_prog" class="button about__button  button--shape_circle" target="_blank" rel="noopener noreferrer"><span class="button__icon button__icon--twitter"><i class="fab fa-twitter"></i></span><!-- /.button__icon --></a><!-- /.button -->
