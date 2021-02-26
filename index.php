@@ -168,7 +168,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <span class="top__letter">で</span><!-- /.top__letter -->
                         <span class="top__letter">す</span><!-- /.top__letter -->
                     </div><!-- /.top__letters-wrap -->
-                    <img src="./img/hero_bg.jpg" alt="" class="top__img">
+                    <img src="./img/bg-min.jpg" alt="トップ" class="top__img">
                     <div class="top__button-wrap">
                         <a href="#contact" class="button top__button">お問い合わせする</a><!-- /.button top__button -->
                     </div><!-- /.top__button-wrap -->
@@ -298,7 +298,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <h2 class="section__title">ー作品ー</h2><!-- /.about_title -->
                     </div><!-- /.section__heads -->
                     <div class="section__desc work__desc">作成したWebサイトを掲載いたします。クリックするとそのサイトに移動します。</div><!-- /.section__desc -->
-                    <p class="work__basic">※Basic認証があるサイトはユーザー名：portfolio、パスワード：a9VXhWzYを入力してください。</p><!-- /.work__basic -->
+                    <p class="work__basic">※Basic認証があるサイトはユーザー名：portfolio、パスワード：pswd9038を入力してください。</p><!-- /.work__basic -->
                     <div class="works-wrap work__items swiper-container js-hide">
                         <div class="works swiper-wrapper">
                             <div class="works__item-wrap swiper-slide">

@@ -3,7 +3,7 @@
 $font-color: #1c1b15;
 $bg-color: #bcbabe;
 $border-color: #dcdcdc;
-$main-bg-color: rgb(51, 47, 47);
+$main-bg-color: #073770;
 
 html {
   font-size: 16px;
@@ -479,9 +479,12 @@ body.fixed {
 
 .top__button-wrap {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10%;
+  left: 10%;
+  bottom: 20%;
+
+  @include mq("sp") {
+    left: 5%;
+  }
 }
 
 .top__button {
