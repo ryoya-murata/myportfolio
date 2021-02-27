@@ -72,9 +72,7 @@ if (isset($_POST['back']) && $_POST['back']) {
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/destyle.css">
-    <!-- Swiper.css -->
     <link rel="stylesheet" href="./css/swiper.css">
-    <!-- my css -->
     <link rel="stylesheet" href="./css/style.css">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Ryoya_prog" />
@@ -168,7 +166,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <span class="top__letter">で</span><!-- /.top__letter -->
                         <span class="top__letter">す</span><!-- /.top__letter -->
                     </div><!-- /.top__letters-wrap -->
-                    <img src="./img/bg-min.jpg" alt="トップ" class="top__img">
+                    <img src="./img/bg.jpg" alt="トップ" class="top__img">
                     <div class="top__button-wrap">
                         <a href="#contact" class="button top__button">お問い合わせする</a><!-- /.button top__button -->
                     </div><!-- /.top__button-wrap -->
@@ -190,11 +188,11 @@ if (isset($_POST['back']) && $_POST['back']) {
                         </div><!-- /.about__content about__content--img -->
                         <div class="about__content about__content--desc js-hide">
                             <p class="about__intro">
-                                はじめまして！<span class="about__name">りょーや</span>といいます！<br>現在大学2年で都内の理系大学に在学しています！<br>
-                                Web制作を4月に知り、そこから勉強を続けています！
+                                はじめまして！<span class="about__name">りょーや</span>といいます！<br>Web制作を4月に知り、そこから勉強しています！<br>
+                                現在Web制作のフリーランスとして活動しています！
                             </p><!-- /.about__intro -->
-                            <a href="https://twitter.com/Ryoya_prog" class="button about__button  button--shape_circle" target="_blank" rel="noopener noreferrer"><span class="button__icon button__icon--twitter"><i class="fab fa-twitter"></i></span><!-- /.button__icon --></a><!-- /.button -->
-                            <a href="https://www.facebook.com/ryoya.0401" class="button about__button  button--shape_circle" target="_blank" rel="noopener noreferrer"><span class="button__icon button__icon--facebook"><i class="fab fa-facebook-f"></i></span><!-- /.button__icon --></a><!-- /.button -->
+                            <a href="https://twitter.com/Ryoya_prog" class="button about__button  button--shape_circle"><span class="button__icon button__icon--twitter"><i class="fab fa-twitter"></i></span><!-- /.button__icon --></a><!-- /.button -->
+                            <a href="https://www.facebook.com/ryoya.0401" class="button about__button  button--shape_circle"><span class="button__icon button__icon--facebook"><i class="fab fa-facebook-f"></i></span><!-- /.button__icon --></a><!-- /.button -->
                         </div><!-- /.about__content about__content--desc -->
                     </div><!-- /.about__contents-wrap -->
                 </div><!-- /.section__inner about__inner -->
@@ -302,23 +300,28 @@ if (isset($_POST['back']) && $_POST['back']) {
                     <div class="works-wrap work__items swiper-container js-hide">
                         <div class="works swiper-wrapper">
                             <div class="works__item-wrap swiper-slide">
-                                <a href="https://30days.ryoya-web.com" class="works__item" target="_blank" rel="noopener noreferrer">
-                                    <img src="./img/works-img/mahaba.png" alt="mahaba" class="works__img" loading="lazy">
+                                <a href="https://engress.ryoya-web.com/" class="works__item">
+                                    <img src="./img/works-img/engress.jpg" alt="Engress" class="works__img" loading="lazy">
                                 </a><!-- /.works__item -->
                             </div><!-- /.works__item-wrap -->
                             <div class="works__item-wrap swiper-slide">
-                                <a href="https://ryoya-murata.github.io/samplecorp-reproduce/" class="works__item" target="_blank" rel="noopener noreferrer">
-                                    <img src="./img/works-img/sample-corp.png" alt="sample-corp" class="works__img" loading="lazy">
+                                <a href="https://30days.ryoya-web.com" class="works__item">
+                                    <img src="./img/works-img/mahaba.jpg" alt="mahaba" class="works__img" loading="lazy">
                                 </a><!-- /.works__item -->
                             </div><!-- /.works__item-wrap -->
                             <div class="works__item-wrap swiper-slide">
-                                <a href="https://ryoya-murata.github.io/sobolon/" class="works__item" target="_blank" rel="noopener noreferrer">
-                                    <img src="./img/works-img/sobolon.png" alt="sobolon" class="works__img" loading="lazy">
+                                <a href="https://ryoya-murata.github.io/samplecorp-reproduce/" class="works__item">
+                                    <img src="./img/works-img/sample-corp.jpg" alt="sample-corp" class="works__img" loading="lazy">
                                 </a><!-- /.works__item -->
                             </div><!-- /.works__item-wrap -->
                             <div class="works__item-wrap swiper-slide">
-                                <a href="https://ryoya-murata.github.io/shiro/" class="works__item" target="_blank" rel="noopener noreferrer">
-                                    <img src="./img/works-img/shiro.png" alt="Shiro" class="works__img" loading="lazy">
+                                <a href="https://ryoya-murata.github.io/sobolon/" class="works__item">
+                                    <img src="./img/works-img/sobolon.jpg" alt="sobolon" class="works__img" loading="lazy">
+                                </a><!-- /.works__item -->
+                            </div><!-- /.works__item-wrap -->
+                            <div class="works__item-wrap swiper-slide">
+                                <a href="https://ryoya-murata.github.io/shiro/" class="works__item">
+                                    <img src="./img/works-img/shiro.jpg" alt="Shiro" class="works__img" loading="lazy">
                                 </a><!-- /.works__item -->
                             </div><!-- /.works__item-wrap -->
                         </div><!-- /.works -->
@@ -395,8 +398,8 @@ if (isset($_POST['back']) && $_POST['back']) {
         <footer class="footer">
             <div class="footer__inner">
                 <div class="footer__button-wrap">
-                    <a href="https://twitter.com/Ryoya_prog" class="button footer__button button--bg_dark button--shape_circle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter footer__icon"></i><span class="button__icon button__icon--twitter"></span><!-- /.button__icon button__icon--twitter --></a><!-- /.button button--bg_dark -->
-                    <a href="https://www.facebook.com/ryoya.0401" class="button footer__button button--bg_dark  button--shape_circle" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f footer__icon"></i><span class="button__icon button__icon--facebook"></span><!-- /.button__icon button__icon--facebook --></a><!-- /.button button--bg_dark -->
+                    <a href="https://twitter.com/Ryoya_prog" class="button footer__button button--bg_dark button--shape_circle"><i class="fab fa-twitter footer__icon"></i><span class="button__icon button__icon--twitter"></span><!-- /.button__icon button__icon--twitter --></a><!-- /.button button--bg_dark -->
+                    <a href="https://www.facebook.com/ryoya.0401" class="button footer__button button--bg_dark  button--shape_circle"><i class="fab fa-facebook-f footer__icon"></i><span class="button__icon button__icon--facebook"></span><!-- /.button__icon button__icon--facebook --></a><!-- /.button button--bg_dark -->
                 </div><!-- /.footer__button-wrap -->
                 <small class="footer__copyright">&copy; 2020 Ryoya</small><!-- /.footer__copyright -->
             </div><!-- /.footer__inner -->

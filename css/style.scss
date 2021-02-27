@@ -168,20 +168,19 @@ $breakpoints: (
   }
 }
 
-.is-hide{
+.is-hide {
   display: none;
 }
 
 .js-hide {
-	opacity: 0;
-	transform: translateY(2.5em);
-	transition: all 1s;
+  opacity: 0;
+  transform: translateY(2.5em);
+  transition: all 1s;
 }
 
-
 .js-show {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 // =======================
@@ -189,7 +188,7 @@ $breakpoints: (
 // =======================
 
 $layer: (
-  loading:200,
+  loading: 200,
   modal: 100,
   drawer: 40,
   sp-menu: 35,
@@ -202,23 +201,23 @@ $layer: (
 //  loading
 // =======================
 
-.loading{
-  width:100vw;
+.loading {
+  width: 100vw;
   height: 100vh;
   background: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: map-get($layer , "loading" );
+  z-index: map-get($layer, "loading");
 }
 
-.loading__img{
+.loading__img {
   width: 100px;
   height: 100px;
   position: fixed;
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 // =======================
@@ -266,7 +265,7 @@ $layer: (
   }
 }
 
-.header__logo{
+.header__logo {
   display: inline-block;
 }
 
@@ -439,7 +438,7 @@ body.fixed {
   width: 100vw;
   height: 100vh;
 
-  @include mq('sp'){
+  @include mq("sp") {
     height: 80vh;
   }
 }
@@ -454,7 +453,7 @@ body.fixed {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .top__letters-wrap {
@@ -493,25 +492,19 @@ body.fixed {
   color: #fff;
   background: rgb(44, 196, 56);
 
-  @include mq('sp'){
+  @include mq("sp") {
     padding: 1em 1.25em;
     min-width: 168px;
   }
 
-  
-
- 
   &:hover {
     color: #fff;
     background: $main-bg-color;
   }
-  
-  &:active{
+
+  &:active {
     transform: translateY(4px);
   }
-
-  
-  
 }
 
 // =======================
@@ -557,7 +550,7 @@ body.fixed {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .about__content--desc {
@@ -573,8 +566,8 @@ body.fixed {
   line-height: 1.5;
 }
 
-.about__name{
-  color:rgb(209, 19, 19);
+.about__name {
+  color: rgb(209, 19, 19);
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -624,34 +617,34 @@ body.fixed {
 }
 
 .skill__item {
-  flex: 0 1 calc(33.3333% - 20px);
+  flex: 0 1 calc(33.3% - 20px);
   margin-right: 30px;
   margin-bottom: 2em;
   padding: 1.5em 1em;
   border: 1px solid #dcdcdc;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
 
   @media all and (-ms-high-contrast: none) {
     flex: 0 1 27.6367%;
     margin-right: 2.9297%;
   }
 
-
-
   @include mq("pc") {
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
     &:nth-child(n + 4) {
       margin-bottom: 0;
     }
   }
 
-  
-
   @include mq("sp") {
     width: 100%;
     margin-bottom: 30px;
+
+    &:nth-last-of-type(3n) {
+      margin-right: 30px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -781,14 +774,14 @@ body.fixed {
   display: block;
   transition: all 0.3s;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 
   &:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
     opacity: 0.4;
   }
   @media all and (-ms-high-contrast: none) {
-    &:hover{
+    &:hover {
       transform: scale(0);
     }
   }
@@ -801,7 +794,6 @@ body.fixed {
   border-radius: 50%;
   background: $main-bg-color;
 
-
   &::after {
     font-size: 24px;
     color: #fff;
@@ -810,8 +802,6 @@ body.fixed {
   &:hover {
     opacity: 0.7;
   }
-
-  
 }
 
 .swiper-button-next::after {
@@ -819,7 +809,6 @@ body.fixed {
 
   @media all and (-ms-high-contrast: none) {
     content: ">";
-    
   }
 }
 
@@ -918,8 +907,8 @@ body.fixed {
   }
 }
 
-.error-msg{
-  color:#ff0000;
+.error-msg {
+  color: #ff0000;
 }
 
 .form__label-wrap--textarea {
@@ -1037,7 +1026,7 @@ body.fixed {
   color: #ff0000;
 }
 
-.err-message{
+.err-message {
   color: #ff0000;
   font-weight: bold;
 }
@@ -1091,7 +1080,7 @@ body.fixed {
 //  complete
 // =======================
 
-.complete-wrap{
+.complete-wrap {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -1099,37 +1088,33 @@ body.fixed {
   justify-content: center;
   align-items: center;
 
-  .footer{
+  .footer {
     position: absolute;
     bottom: 0%;
     left: 0;
     right: 0;
     width: 100%;
-
   }
 }
 
-
-
-.complete__inner{
+.complete__inner {
   max-width: $layout-width-inner;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 2.5em;
 
-  @include mq('sp'){
+  @include mq("sp") {
     padding: 0 1.25em;
   }
 }
 
-.complete__message{
+.complete__message {
   font-size: 1.75em;
   margin-bottom: 1em;
   text-align: center;
   padding: 2em 1em;
-  
 
-  @include mq('sp'){
+  @include mq("sp") {
     font-size: 1.25em;
   }
 }
