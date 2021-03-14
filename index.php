@@ -78,7 +78,7 @@ if (isset($_POST['back']) && $_POST['back']) {
     <meta name="twitter:site" content="@Ryoya_prog" />
     <meta property="og:url" content="https://portfolio.ryoya-web.com/" />
     <meta property="og:title" content="りょーやのポートフォリオ" />
-    <meta property="og:image" content="./img/twitter.jpg" />
+    <meta property="og:image" content="./img/top.png" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179733140-4"></script>
@@ -98,8 +98,10 @@ if (isset($_POST['back']) && $_POST['back']) {
 <body>
     <?php if ($mode === "input") { ?>
 
-        <div class="loading is-hide">
-            <img src="./img/loading.svg" alt="Loading..." class="loading__img is-hide">
+        
+
+        <div class="loading">
+            <div class="loading__icon"></div><!-- /.loading-icon -->
         </div><!-- /.loading -->
 
         <!-- header -->
@@ -184,6 +186,7 @@ if (isset($_POST['back']) && $_POST['back']) {
                         <div class="about__content about__content--img js-hide">
                             <div class="about__img-wrap">
                                 <img src="./img/profile.jpg" alt="自己紹介" class="about__img" loading="lazy">
+                                <div class="about__img-bg"></div><!-- /.about__img-bg -->
                             </div><!-- /.about__img-wrap -->
                         </div><!-- /.about__content about__content--img -->
                         <div class="about__content about__content--desc js-hide">

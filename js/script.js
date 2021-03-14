@@ -3,15 +3,15 @@
 //==================
 
 var bg = $('.loading'),
-    loader = $('.loading__img');
+    loader = $('.loading__icon');
 /* ローディング画面の非表示を解除 */
 bg.removeClass('is-hide');
 loader.removeClass('is-hide');
 
 /* 読み込み完了 */
 $(window).on('load', function(){
-    bg.delay(900).fadeOut(800);
-    loader.delay(900).fadeOut(300);
+    bg.fadeOut(800);
+    loader.fadeOut(300);
 });
 
 /* 10秒経ったら強制的にローディング画面を非表示にする */
@@ -114,7 +114,7 @@ $(function () {
 TweenMax.staggerFromTo('.top__letter',1,{
     opacity:0,x:'1em',y:'1em'
 },{
-    opacity:1,x:0,y:0,rotateZ:0,ease:"power2.easeInOut",delay:1.7
+    opacity:1,x:0,y:0,rotateZ:0,ease:"power2.easeInOut",delay:1,
 },0.05);
 
 
